@@ -1,4 +1,4 @@
 @Library('roboshop') _
 
-env.COMPONENT = "jankins"
+env.COMPONENT = "jenkins"
 nginx()
