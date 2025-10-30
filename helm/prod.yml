@@ -1,0 +1,13 @@
+appPort: 80
+appName: frontend
+ingress:
+  enabled: true
+  dnsName: www.vitingousa.live
+  path: /
+resources:
+    limits:
+      cpu: 1000m
+      memory: 512Mi
+    requests:
+      cpu: 150m
+      memory: 256Mi
