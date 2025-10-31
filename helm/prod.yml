@@ -5,9 +5,9 @@ ingress:
   dnsName: www.vitingousa.live
   path: /
 resources:
-    limits:
-      cpu: 1000m
-      memory: 512Mi
-    requests:
-      cpu: 150m
-      memory: 256Mi
+  limits:
+    cpu: 1000m
+    memory: 1024Mi
+  requests:
+    cpu: 800m
+    memory: 800Mi
