@@ -1,7 +1,7 @@
-#appPort: 80
-#appName: frontend
-#ingress:
-#  enabled: true
+appPort: 80
+appName: frontend
+ingress:
+  enabled: true
 #  dnsName: www.vitingousa.live
 #  path: /
 #resources:
