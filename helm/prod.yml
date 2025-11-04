@@ -1,9 +1,9 @@
 appPort: 80
 appName: frontend
 ingress:
-  enabled: false
-#  dnsName: www.vitingousa.live
-#  path: /
+  enabled: true
+  dnsName: www.vitingousa.live
+  path: /
 #resources:
 #  limits:
 #    cpu: 1000m
