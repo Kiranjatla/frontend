@@ -13,20 +13,3 @@ ingress:
 #    memory: 800Mi
 java:
   xmx: "750m"
-
-# We must explicitly set PAYMENT_GATEWAY here to override the incorrect
-# 'https://yahoo.com/' default in the application code.
-extraEnv:
-  - name: CART_HOST
-    value: cart-roboshop
-  - name: USER_HOST
-    value: user-roboshop
-  - name: PAYMENT_GATEWAY
-    # Assuming the payment service is named 'payment-roboshop' and runs on port 8080
-    # We provide the correct Kubernetes Service URL for inter-service communication.
-    value: http://payment-roboshop:8080/payment
-  # --- FIX FOR UNICODEENCODEERROR ---
-  - name: LANG
-    value: C.UTF-8
-  - name: LC_ALL
-    value: C.UTF-8
